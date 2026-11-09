@@ -2791,3 +2791,13 @@ canvas.checker {
         grid-column: 1/-1
     }
 }
+
+/* Hide Netlify badge */
+.nl-badge{
+    display: none !important;
+}
+
+/* Hide Netlify badge iframe */
+#nl-badge-frame {
+    display: none !important;
+}
