@@ -13,12 +13,28 @@
 <script src="/components/components.js?v=838398bd" defer></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://toolzila.in/"}, {"@type": "ListItem", "position": 2, "name": "Image Tools", "item": "https://toolzila.in/image/"}, {"@type": "ListItem", "position": 3, "name": "Background Remover", "item": "https://toolzila.in/image/background-remover/"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Background Remover", "url": "https://toolzila.in/image/background-remover/", "description": "Remove the background from a photo and download a transparent PNG. Works in your browser with no upload and no API.", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "INR"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is it as good as paid tools?", "acceptedAnswer": {"@type": "Answer", "text": "Not always. Paid services use much larger models. This free tool is private and works well on clear subjects, and the sliders help clean up the edges."}}, {"@type": "Question", "name": "Is my photo uploaded?", "acceptedAnswer": {"@type": "Answer", "text": "No. The cutout is made inside your browser, so your photo never leaves your device."}}, {"@type": "Question", "name": "Why is the first photo slower?", "acceptedAnswer": {"@type": "Answer", "text": "The model and engine load the first time. After that, photos are processed faster."}}]}</script>
 <!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-B7CHFPN4ZD"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-B7CHFPN4ZD');
+(function () {
+    if (window.location.hostname !== 'toolzila.in') {
+        return;
+    }
+
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-B7CHFPN4ZD';
+    document.head.appendChild(script);
+
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        window.dataLayer.push(arguments);
+    }
+
+    window.gtag = gtag;
+
+    gtag('js', new Date());
+    gtag('config', 'G-B7CHFPN4ZD');
+})();
 </script>
 </head><body data-tool="/image/background-remover/">
 <div id="site-header" class="slot-h"><div class="container hbar"><a class="logo" href="/"><span class="logo-mark"><img src="/icons/toolzila-icon.png" alt="" width="38" height="38"></span><span class="logo-text">Tool<b>zila</b></span></a></div><noscript><nav class="ns-nav" aria-label="Main"><a href="/">Home</a><a href="/tools/">All Tools</a><a href="/pdf/">PDF</a><a href="/image/">Image</a><a href="/calculator/">Calculators</a><a href="/text/">Text</a><a href="/developer/">Developer</a><a href="/ai/">Smart</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav></noscript></div>

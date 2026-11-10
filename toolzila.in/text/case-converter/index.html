@@ -13,12 +13,28 @@
 <script src="/components/components.js?v=838398bd" defer></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://toolzila.in/"}, {"@type": "ListItem", "position": 2, "name": "Text Tools", "item": "https://toolzila.in/text/"}, {"@type": "ListItem", "position": 3, "name": "Case Converter", "item": "https://toolzila.in/text/case-converter/"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Case Converter", "url": "https://toolzila.in/text/case-converter/", "description": "Change text to UPPERCASE, lowercase, Title Case or Sentence case in one tap.", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "INR"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can I undo a change?", "acceptedAnswer": {"@type": "Answer", "text": "Tap another style, but the original capitals cannot be restored, so keep a copy of the original."}}, {"@type": "Question", "name": "Is my text saved?", "acceptedAnswer": {"@type": "Answer", "text": "No. It stays in your browser."}}]}</script>
 <!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-B7CHFPN4ZD"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-B7CHFPN4ZD');
+(function () {
+    if (window.location.hostname !== 'toolzila.in') {
+        return;
+    }
+
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-B7CHFPN4ZD';
+    document.head.appendChild(script);
+
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        window.dataLayer.push(arguments);
+    }
+
+    window.gtag = gtag;
+
+    gtag('js', new Date());
+    gtag('config', 'G-B7CHFPN4ZD');
+})();
 </script>
 </head><body data-tool="/text/case-converter/">
 <div id="site-header" class="slot-h"><div class="container hbar"><a class="logo" href="/"><span class="logo-mark"><img src="/icons/toolzila-icon.png" alt="" width="38" height="38"></span><span class="logo-text">Tool<b>zila</b></span></a></div><noscript><nav class="ns-nav" aria-label="Main"><a href="/">Home</a><a href="/tools/">All Tools</a><a href="/pdf/">PDF</a><a href="/image/">Image</a><a href="/calculator/">Calculators</a><a href="/text/">Text</a><a href="/developer/">Developer</a><a href="/ai/">Smart</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav></noscript></div>
