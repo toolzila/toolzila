@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"></noscript>
 <script>try{document.documentElement.dataset.theme=localStorage.getItem('tz-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light')}catch(e){}</script>
-<link rel="stylesheet" href="/assets/style.css?v=3b0b0f73">
+<link rel="stylesheet" href="/assets/style.css?v=5c1a9e22">
 <link rel="preload" href="/components/header.html?v=838398bd" as="fetch" crossorigin="anonymous"><link rel="preload" href="/components/footer.html?v=838398bd" as="fetch" crossorigin="anonymous">
 <script src="/components/components.js?v=838398bd" defer></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://toolzila.in/"}, {"@type": "ListItem", "position": 2, "name": "PDF Tools", "item": "https://toolzila.in/pdf/"}, {"@type": "ListItem", "position": 3, "name": "Split PDF", "item": "https://toolzila.in/pdf/split-pdf/"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Split PDF", "url": "https://toolzila.in/pdf/split-pdf/", "description": "Keep only the pages you need from a PDF. Type page numbers like 1-3, 5 and download a new PDF.", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "INR"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can I pick pages that are not next to each other?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Separate them with commas, like 1-3, 5, 8-10."}}, {"@type": "Question", "name": "Is my PDF uploaded?", "acceptedAnswer": {"@type": "Answer", "text": "No. It is processed in your browser."}}]}</script>
@@ -48,12 +48,32 @@
 <section><h2>Features</h2><ul class="ticks"><li>Page ranges and single pages</li><li>Original PDF is not changed</li><li>Runs in your browser</li></ul></section>
 <section><h2>Supported formats and limitations</h2><p>Only PDF files are accepted. Password-protected or damaged PDFs cannot be read. Page numbers outside the document are ignored.</p></section>
 
+<section class="guide"><h2>How to extract the pages you need from a PDF</h2>
+<p>Sometimes a PDF has far more pages than you need to send. Splitting lets you keep just the pages that matter and download them as a new, smaller file.</p>
+<h3>When this helps</h3>
+<ul>
+<li>A 40-page scanned document where the portal only wants page 1 and page 7.</li>
+<li>Sharing one chapter of a book or one invoice from a monthly bundle.</li>
+<li>Removing blank pages or pages with private details before sending.</li>
+<li>Reducing a file that is slightly over a size limit.</li>
+</ul>
+<h3>How to type the page numbers</h3>
+<div class="tbl"><table><thead><tr><th>You type</th><th>You get</th></tr></thead><tbody><tr><td>1-3</td><td>Pages 1, 2 and 3</td></tr><tr><td>5</td><td>Only page 5</td></tr><tr><td>1-3, 5, 8-10</td><td>Pages 1, 2, 3, 5, 8, 9 and 10 in one new PDF</td></tr></tbody></table></div>
+<h3>How to get a different page order</h3>
+<p>This tool puts pages in the new PDF in the same order you type them. So typing <b>9, 1-3</b> gives a PDF that starts with page 9, followed by pages 1, 2 and 3. A range written backwards, such as 3-1, is read as 1 to 3. Page numbers that do not exist in the file are ignored. You can also type the same page twice if you need two copies.</p>
+<h3>Good habits</h3>
+<ul>
+<li>Open the original once and note the exact page numbers before you start.</li>
+<li>Keep the original file safe. The tool creates a new file called split.pdf and does not change the old one.</li>
+<li>Check the new PDF before uploading it anywhere.</li>
+</ul>
+</section>
 <section><h2>Frequently asked questions</h2><details><summary>Can I pick pages that are not next to each other?</summary><p>Yes. Separate them with commas, like 1-3, 5, 8-10.</p></details><details><summary>Is my PDF uploaded?</summary><p>No. It is processed in your browser.</p></details></section>
 <section class="privacy"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><span>Privacy: this tool runs in your browser. Nothing you add is uploaded to our servers.</span></section>
 <!-- AD SLOT (tool page bottom) -->
 <section><h2>Related tools</h2><div class="cards"><a class="card" href="/pdf/merge-pdf/" data-cat="pdf"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3h8l4 4v12a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M12 11v6m-3-3h6"/></svg></span><b>Merge PDF</b><span class="mu">Combine several PDF files into one document right in your browser.</span></a><a class="card" href="/pdf/jpg-to-pdf/" data-cat="pdf"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3h8l4 4v12a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M12 11v6m-3-3h6"/></svg></span><b>JPG to PDF</b><span class="mu">Turn JPG and PNG photos into a single PDF.</span></a><a class="card" href="/pdf/pdf-to-jpg/" data-cat="pdf"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3h8l4 4v12a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M12 11v6m-3-3h6"/></svg></span><b>PDF to JPG</b><span class="mu">Convert every page of a PDF into a JPG image that you can download one by one.</span></a></div></section></div></main>
 <div id="site-footer" class="slot-f"><noscript><nav class="ns-nav" aria-label="Footer"><a href="/about/">About Us</a><a href="/contact/">Contact Us</a><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms &amp; Conditions</a><a href="/disclaimer/">Disclaimer</a><a href="mailto:toolzilaofficial@gmail.com">toolzilaofficial@gmail.com</a></nav></noscript></div>
-<script src="/assets/site.js?v=3b0b0f73"></script><script src="/assets/vendor/pdf-lib.min.js" defer></script><script src="/assets/app.js?v=3b0b0f73"></script><script>let buf,total=0;
+<script src="/assets/site.js?v=5c1a9e22"></script><script src="/assets/vendor/pdf-lib.min.js" defer></script><script src="/assets/app.js?v=5c1a9e22"></script><script>let buf,total=0;
 dropzone($("dz"),$("f"),async fs=>{
   const f=fs[0];$("msg").textContent="";if(!f||f.type!=="application/pdf"){$("msg").textContent="Please choose a PDF file.";return}
   try{buf=await f.arrayBuffer();const d=await PDFLib.PDFDocument.load(buf,{ignoreEncryption:true});total=d.getPageCount();$("info").textContent=f.name+" · "+total+" pages";$("go").disabled=false}

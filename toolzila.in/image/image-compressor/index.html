@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"></noscript>
 <script>try{document.documentElement.dataset.theme=localStorage.getItem('tz-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light')}catch(e){}</script>
-<link rel="stylesheet" href="/assets/style.css?v=3b0b0f73">
+<link rel="stylesheet" href="/assets/style.css?v=5c1a9e22">
 <link rel="preload" href="/components/header.html?v=838398bd" as="fetch" crossorigin="anonymous"><link rel="preload" href="/components/footer.html?v=838398bd" as="fetch" crossorigin="anonymous">
 <script src="/components/components.js?v=838398bd" defer></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://toolzila.in/"}, {"@type": "ListItem", "position": 2, "name": "Image Tools", "item": "https://toolzila.in/image/"}, {"@type": "ListItem", "position": 3, "name": "Image Compressor", "item": "https://toolzila.in/image/image-compressor/"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Image Compressor", "url": "https://toolzila.in/image/image-compressor/", "description": "Make JPG, PNG and WebP images smaller in KB while keeping them looking good. Nothing is uploaded.", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "INR"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does compression reduce quality?", "acceptedAnswer": {"@type": "Answer", "text": "Lower quality settings give smaller files and can show small changes. Try 70 percent first."}}, {"@type": "Question", "name": "Are my photos uploaded?", "acceptedAnswer": {"@type": "Answer", "text": "No. Everything is processed in your browser."}}]}</script>
@@ -49,12 +49,31 @@
 <section><h2>Features</h2><ul class="ticks"><li>Before and after size for every file</li><li>Output as JPG, WebP or PNG</li><li>Resize by width while compressing</li></ul></section>
 <section><h2>Supported formats and limitations</h2><p>Supports JPG, PNG and WebP. PNG files ignore the quality slider, so choose JPG or WebP for much smaller files. Transparent areas become white when saving as JPG.</p></section>
 
+<section class="guide"><h2>How to make images smaller without making them look bad</h2>
+<p>Large images are the most common reason a website feels slow and a WhatsApp or email attachment fails to send. Compressing an image means saving it again with less data. Done carefully, the picture looks almost the same, but the file can be 60 to 90 percent smaller.</p>
+<h3>JPG, WebP or PNG: which one should you choose?</h3>
+<div class="tbl"><table><thead><tr><th>Format</th><th>Best for</th><th>Things to know</th></tr></thead><tbody><tr><td>JPG</td><td>Photos, profile pictures, exam forms</td><td>Small files, no transparency. Quality drops a little each time you re-save.</td></tr><tr><td>WebP</td><td>Websites and apps</td><td>Usually 25 to 35 percent smaller than JPG at similar quality. Supported by all modern browsers.</td></tr><tr><td>PNG</td><td>Logos, screenshots, graphics with text or transparency</td><td>Sharp edges and transparency, but photos become very large.</td></tr></tbody></table></div>
+<h3>Which quality setting should I use?</h3>
+<p>For most photos a quality of 60 to 80 percent is the sweet spot. Below 50 percent, blocky patches start to appear around faces and text. If your picture is going on a website, start at 70 and look at the result on your own screen before downloading.</p>
+<h3>Tips for website speed</h3>
+<ul>
+<li>Resize before you compress. A 4000 px wide photo shown in a 800 px wide box wastes bandwidth. Set a maximum width of 1200 px or less for blog images.</li>
+<li>Choose WebP for photos on your own site and keep PNG only where you need transparency.</li>
+<li>Aim for under 150 KB for normal content images and under 300 KB for a big banner.</li>
+</ul>
+<h3>Tips for WhatsApp and email</h3>
+<ul>
+<li>WhatsApp already compresses photos you send as images. If you want to keep detail, share as a document instead, or compress it yourself first.</li>
+<li>Many email services limit attachments to around 20 to 25 MB in total. Compressing five phone photos from 5 MB to 700 KB each makes them easy to send.</li>
+<li>For government portals with a KB limit, use the Photo and Signature Resizer, which lets you type the exact target size.</li>
+</ul>
+</section>
 <section><h2>Frequently asked questions</h2><details><summary>Does compression reduce quality?</summary><p>Lower quality settings give smaller files and can show small changes. Try 70 percent first.</p></details><details><summary>Are my photos uploaded?</summary><p>No. Everything is processed in your browser.</p></details></section>
 <section class="privacy"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><span>Privacy: this tool runs in your browser. Nothing you add is uploaded to our servers.</span></section>
 <!-- AD SLOT (tool page bottom) -->
 <section><h2>Related tools</h2><div class="cards"><a class="card" href="/image/photo-resizer/" data-cat="image"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="1.6"/><path d="m21 16-5-5-9 9"/></svg></span><b>Photo &amp; Signature Resizer</b><span class="mu">Resize a photo or signature to an exact size in KB for exam forms, job applications and government portals.</span></a><a class="card" href="/image/jpg-to-png/" data-cat="image"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="1.6"/><path d="m21 16-5-5-9 9"/></svg></span><b>JPG to PNG</b><span class="mu">Convert JPG images to PNG online.</span></a><a class="card" href="/image/heic-to-jpg/" data-cat="image"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="1.6"/><path d="m21 16-5-5-9 9"/></svg></span><b>HEIC to JPG</b><span class="mu">Convert iPhone HEIC and HEIF photos to JPG so they open everywhere.</span></a></div></section></div></main>
 <div id="site-footer" class="slot-f"><noscript><nav class="ns-nav" aria-label="Footer"><a href="/about/">About Us</a><a href="/contact/">Contact Us</a><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms &amp; Conditions</a><a href="/disclaimer/">Disclaimer</a><a href="mailto:toolzilaofficial@gmail.com">toolzilaofficial@gmail.com</a></nav></noscript></div>
-<script src="/assets/site.js?v=3b0b0f73"></script><script src="/assets/app.js?v=3b0b0f73"></script><script>let files=[];
+<script src="/assets/site.js?v=5c1a9e22"></script><script src="/assets/app.js?v=5c1a9e22"></script><script>let files=[];
 dropzone($("dz"),$("f"),fs=>{files=fs.filter(f=>f.type.startsWith("image/"));if(!files.length)$("msg").textContent="Please choose image files.";run()});
 $("q").oninput=()=>$("qv").textContent=$("q").value;
 ["q","fmt","mw"].forEach(i=>$(i).addEventListener("change",run));
