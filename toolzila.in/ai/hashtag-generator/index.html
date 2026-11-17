@@ -53,13 +53,17 @@
 <section><h2>Related tools</h2><div class="cards"><a class="card" href="/ai/image-to-text/" data-cat="ai"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"/></svg></span><b>Image to Text (OCR)</b><span class="mu">Extract text from a photo or screenshot in English or Hindi.</span></a><a class="card" href="/ai/text-summarizer/" data-cat="ai"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"/></svg></span><b>Text Summarizer</b><span class="mu">Shorten a long article or notes by picking its most important sentences.</span></a><a class="card" href="/ai/text-to-speech/" data-cat="ai"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"/></svg></span><b>Text to Speech</b><span class="mu">Make your browser read text aloud.</span></a></div></section></div></main>
 <div id="site-footer" class="slot-f"><noscript><nav class="ns-nav" aria-label="Footer"><a href="/about/">About Us</a><a href="/contact/">Contact Us</a><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms &amp; Conditions</a><a href="/disclaimer/">Disclaimer</a><a href="mailto:toolzilaofficial@gmail.com">toolzilaofficial@gmail.com</a></nav></noscript></div>
 <script src="/assets/site.js?v=3b0b0f73"></script><script src="/assets/app.js?v=3b0b0f73"></script><script>const STOP=new Set("a an the and or of to in on at for with by from is are was my our your".split(" "));
-const SUF=["tips","ideas","daily","india","lovers","goals","vibes","community","love","life","world","club","hub","official"];
+const SUF=["tips","ideas","daily","india","lovers","goals","vibes","community","love","life","world","club","hub","official","gram","style","trending","viral","special","moments","time","fun","lover","addict","squad","nation","mood","post","content","fam","forever","everyday"],PRE=["best","love","my","top","happy","all","just","new","real","pure","the","we","so","go","one"];
+
 $("go").onclick=()=>{
   $("msg").textContent="";const w=($("x").value.toLowerCase().match(/[\p{L}\p{M}\p{N}]+/gu)||[]).filter(k=>!STOP.has(k)&&k.length>1);
   if(!w.length){$("msg").textContent="Please type a topic or a few keywords.";return}
   const set=new Set(),n=+$("n").value;
   w.forEach(k=>set.add(k));if(w.length>1){set.add(w.join(""));for(let i=0;i<w.length-1;i++)set.add(w[i]+w[i+1])}
-  for(const s of SUF){for(const k of w.slice(0,3)){set.add(k+s);if(set.size>=n*2)break}}
+  const add=t=>{if(set.size<n)set.add(t)};
+  const base=w.slice(0,3);
+  for(const s of SUF)for(const k of base){if(set.size>=n)break;add(k+s)}
+  for(const p of PRE)for(const k of base){if(set.size>=n)break;add(p+k)}
   $("out").value=[...set].slice(0,n).map(t=>"#"+t).join(" ");
 };
 $("cp").onclick=e=>copyText($("out").value,e.target);$("clr").onclick=()=>{$("x").value="";$("out").value="";$("msg").textContent=""};</script>
